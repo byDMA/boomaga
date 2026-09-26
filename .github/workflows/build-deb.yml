@@ -11,9 +11,36 @@ permissions:
 
 jobs:
   build-deb:
-    runs-on: ubuntu-26.04
+    name: Build for ${{ matrix.distribution.name }} (${{ matrix.architecture.name }})
+    runs-on: ${{ matrix.architecture.runner }}
+    container:
+      image: ${{ matrix.distribution.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        distribution:
+          - name: Ubuntu 26.04
+            image: ubuntu:26.04
+            package_suffix: ubuntu-26_04
+          - name: Ubuntu 24.04
+            image: ubuntu:24.04
+            package_suffix: ubuntu-24_04
+          - name: Debian 13
+            image: debian:13
+            package_suffix: debian-13
+          - name: Debian 12
+            image: debian:12
+            package_suffix: debian-12
+        architecture:
+          - name: amd64
+            runner: ubuntu-24.04
+          - name: arm64
+            runner: ubuntu-24.04-arm
     permissions:
       contents: write
+
+    env:
+      DEBIAN_FRONTEND: noninteractive
 
     steps:
       - name: Check out source
@@ -21,8 +48,8 @@ jobs:
 
       - name: Install Debian build dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install --no-install-recommends -y \
+          apt-get update
+          apt-get install --no-install-recommends -y \
             build-essential \
             cmake \
             debhelper-compat \
@@ -40,12 +67,15 @@ jobs:
       - name: Build Debian package
         run: |
           dpkg-buildpackage --build=binary --no-sign
-          mv ../*.deb .
+          for package in ../*.deb; do
+            filename="${package##*/}"
+            mv "$package" "${filename%.deb}-${{ matrix.distribution.package_suffix }}.deb"
+          done
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
         with:
-          name: boomaga-deb-packages
+          name: boomaga-deb-packages-${{ matrix.distribution.package_suffix }}-${{ matrix.architecture.name }}
           path: "*.deb"
           if-no-files-found: error
 
@@ -53,6 +83,8 @@ jobs:
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         with:
-          files: "*.deb"
+          files: |
+            *.deb
+            !*dbgsym*.deb
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -6,8 +6,25 @@
 [Download](http://www.boomaga.org/download/)
 
 
+  <a href="https://www.star-history.com/?repos=boomaga%2Fboomaga&type=date&legend=bottom-right">
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://api.star-history.com/chart?repos=boomaga/boomaga&type=date&theme=dark&legend=bottom-right"
+      />
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="https://api.star-history.com/chart?repos=boomaga/boomaga&type=date&legend=bottom-right"
+      />
+      <img
+        alt="Star History Chart"
+        src="https://api.star-history.com/chart?repos=boomaga/boomaga&type=date&legend=bottom-right"
+        width="600"
+      />
+    </picture>
+  </a>
+  
 *We are looking for volunteers to help maintain this project.*
-
 
 
 About the program
@@ -109,7 +126,13 @@ discovered bugs to [Issue tracker](https://github.com/Boomaga/boomaga/issues), o
 Installation
 ===========
 
-One simple solution is to install the program from the package manager of your distribution. Installation guide for Ubuntu-based distros is avabilable [here](https://github.com/Boomaga/boomaga/wiki/How-to-Install-Boomaga-in-LinuxMint-or-Ubuntu).
+One simple solution is to install the program from the package manager of your distribution. 
+
+- For Ubuntu/Mint, use the Official PPA, as described [here](https://github.com/Boomaga/boomaga/wiki/How-to-Install-Boomaga-in-LinuxMint-or-Ubuntu#method-1--install-via-ppa).
+
+- For Debian, please head over to the prebuilt .deb packages in [GitHub releases](https://github.com/Boomaga/boomaga/releases/latest).
+
+- For Arch Linux, use the [AUR package](https://aur.archlinux.org/packages/boomaga), `yay -S boomaga`.
 
 Should you wish to build the program from the sources, please refer to [INSTALL.txt](INSTALL.txt) for more information.
 
@@ -119,6 +142,14 @@ Adding Boomaga as a virtual printer
 
 Once the program has been installed, it’s time to add the virtual printer. Please note that this has to be
 done only once. You don’t have to install the printer over again when updating the program.
+
+Method 1:
+---
+
+Click on `Help --> Add Boomaga as virtual printer`.
+
+Method 2:
+---
 
 Boomaga requires CUPS. On a systemd-based Linux distribution, enable and start it with:
 

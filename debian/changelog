@@ -1,3 +1,21 @@
+boomaga (3.9.0-1) resolute; urgency=medium
+
+  * Fix Qt dbus issues (to fix print to boomaga in KDE+Ubuntu)
+
+ -- Archisman Panigrahi <apandada1@gmail.com>  Fri, 25 Sep 2026 12:06:41 -0400
+
+boomaga (3.8.1-1) resolute; urgency=medium
+
+  * A3 support
+
+ -- Archisman Panigrahi <apandada1@gmail.com>  Fri, 25 Sep 2026 01:34:31 -0400
+
+boomaga (3.8.0-1) resolute; urgency=medium
+
+  * various bugfixes and translation updates
+
+ -- Archisman Panigrahi <apandada1@gmail.com>  Fri, 25 Sep 2026 01:00:46 -0400
+
 boomaga (3.7.0-1) resolute; urgency=medium
 
   * New buttons, translation updates, menu entry for virtual printer

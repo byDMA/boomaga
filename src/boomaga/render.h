@@ -27,6 +27,7 @@
 #ifndef RENDER_H
 #define RENDER_H
 
+#include <atomic>
 #include <QObject>
 #include <QImage>
 #include <QThread>
@@ -45,7 +46,10 @@ public:
     explicit RenderWorker(const QString &fileName, int resolution);
     virtual ~RenderWorker();
 
+    // Read from the thread owning the Render, written from both that thread
+    // (when a job is handed out) and the worker thread (when it finishes).
     bool isBusy() const { return mBusy; }
+    void setBusy(bool busy) { mBusy = busy; }
     QThread *thread() { return &mThread; }
 
 public slots:
@@ -59,7 +63,7 @@ signals:
 private:
     int mSheetNum;
     int mResolution;
-    bool mBusy;
+    std::atomic<bool> mBusy;
     QThread mThread;
     poppler::document *mPopplerDoc;
 };
@@ -69,7 +73,15 @@ class Render : public QObject
 {
     Q_OBJECT
 public:
-    explicit Render(double resolution, int threadCount = 8, QObject *parent = 0);
+    // Upper bound rather than a fixed count: the worker count follows the
+    // number of cores, but Poppler stops scaling well before a large machine
+    // runs out of them. Measured over a 342 page document, 150 dpi, 12 cores / 24 threads:
+    // 4 workers 3.0x, 8 workers 4.1x, 16 workers 3.7x, 24 workers 3.4x, while
+    // peak memory kept growing (32 MB at 8 workers, 124 MB at 24).
+    static constexpr int DefaultMaxThreadCount = 8;
+
+    explicit Render(double resolution, QObject *parent = nullptr,
+                    int maxThreadCount = DefaultMaxThreadCount);
     virtual ~Render();
 
     QString fileName() const { return mFileName; }
@@ -97,8 +109,11 @@ private:
     int mThreadCount;
     QList<QPair<int, bool> > mQueue;
 
-    void startRenderSheet(RenderWorker *worker, int sheetNum);
-    void startRenderPage(RenderWorker *worker, int pageNum);
+    RenderWorker *idleWorker() const;
+
+    // Return whether the job was really handed to the worker.
+    bool startRenderSheet(RenderWorker *worker, int sheetNum);
+    bool startRenderPage(RenderWorker *worker, int pageNum);
 
 };
 

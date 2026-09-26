@@ -29,7 +29,7 @@
     </message>
     <message>
         <source>Boomaga provides a virtual printer for CUPS. This can be used for print preview or for print booklets.</source>
-        <translation>Boomaga poskytuje virtuální tiskárnu pro CUPS. To lze použít pro tisk náhledů nebo na tisk knížeček.</translation>
+        <translation>Boomaga poskytuje virtuální tiskárnu pro CUPS. Lze ji využít k náhledu před tiskem nebo k tisku brožur.</translation>
     </message>
     <message>
         <source>Copyright: %1-%2 %3</source>
@@ -37,15 +37,23 @@
     </message>
     <message>
         <source>Homepage: %1</source>
-        <translation>Stránky: %1</translation>
+        <translation>Domovská stránka: %1</translation>
     </message>
     <message>
         <source>License: %1</source>
         <translation>Licence: %1</translation>
     </message>
     <message>
-        <source>If you are interested in working with our development team, &lt;a %1&gt;join us&lt;/a&gt;.</source>
-        <translation>Pokud byste měli zájem pracovat v naší vývojářské skupině, &lt;a %1&gt;připojte se k nám&lt;/a&gt;.</translation>
+        <source>Boomaga is developed by the &lt;a %1&gt;Boomaga Team&lt;/a&gt; and &lt;a %2&gt;contributors&lt;/a&gt; on GitHub.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Contributors:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>If you are interested in working with our development team, create a new issue on GitHub to &lt;a %1&gt;join us&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Special thanks to:</source>
@@ -53,11 +61,7 @@
     </message>
     <message>
         <source>If you want to help translate, join the Boomaga translation team on &lt;a %1&gt;Weblate&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Boomaga is developed by the &lt;a %1&gt;Boomaga Team and contributors&lt;/a&gt; on GitHub.</source>
-        <translation>Boomaga je vyvíjena &lt;a %1&gt;týmem Boomaga a přispěvateli&lt;/a&gt; na GitHub.</translation>
+        <translation>Pokud chcete pomoci s překladem, přidejte se k překladatelskému týmu Boomagy na &lt;a %1&gt;Weblate&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -75,19 +79,19 @@
     </message>
     <message>
         <source>Divide your long booklets into smaller sub-booklets for printing.</source>
-        <translation>Rozdělit velké knížečky pro tisk na menší dílčí knížečky.</translation>
+        <translation>Rozdělit velké brožury pro tisk na menší dílčí brožury.</translation>
     </message>
     <message>
         <source>Print as sub-booklets</source>
-        <translation>Rozdělit tisk knížeček (dílčí knížečky)</translation>
+        <translation>Tisknout jako dílčí brožury</translation>
     </message>
     <message>
         <source>Maximum number of sheets in your sub-booklet.</source>
-        <translation>Největší počet listů na dílčí knížečku.</translation>
+        <translation>Největší počet listů na dílčí brožuru.</translation>
     </message>
     <message>
         <source>Sheets per sub-booklet:</source>
-        <translation>Listů na dílčí knížečku</translation>
+        <translation>Listů na dílčí brožuru:</translation>
     </message>
     <message>
         <source>Autosave your jobs every time you print.</source>
@@ -99,27 +103,27 @@
     </message>
     <message>
         <source>Allow negative page margins:</source>
-        <translation>Povolit záporné okraje stran:</translation>
+        <translation>Povolit záporné okraje stránek:</translation>
     </message>
     <message>
         <source>Automatically check for updates</source>
         <extracomment>Setting groupbox title</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Automatické kontroly aktualizací</translation>
     </message>
     <message>
         <source>Check now</source>
         <extracomment>Buuton title for check updates </extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Zkontrolovat nyní</translation>
     </message>
     <message>
         <source>Last check was %1</source>
         <comment>Information about last update</comment>
-        <translation type="unfinished"></translation>
+        <translation>Poslední kontrola: %1</translation>
     </message>
     <message>
         <source>Never checked</source>
         <comment>Information about last update</comment>
-        <translation type="unfinished"></translation>
+        <translation>Zatím nekontrolováno</translation>
     </message>
     <message>
         <source>Select directory for saved jobs.</source>
@@ -138,7 +142,7 @@
     <name>CupsBooFile</name>
     <message>
         <source>I can&apos;t read file &quot;%1&quot; either because it&apos;s not a supported file type, or because the file has been damaged.</source>
-        <translation>Nelze přečíst soubor &quot;%1&quot;, protože buď tento není podporovaným souborovým typem, nebo protože soubor byl poškozen.</translation>
+        <translation>Soubor &quot;%1&quot; nelze přečíst. Buď jde o nepodporovaný formát, nebo je soubor poškozený.</translation>
     </message>
 </context>
 <context>
@@ -169,7 +173,7 @@
     </message>
     <message>
         <source> The name of the person who created the document.</source>
-        <translation>Jméno osoby, která dokument vytvořila.</translation>
+        <translation> Jméno osoby, která dokument vytvořila.</translation>
     </message>
     <message>
         <source>Title:</source>
@@ -181,11 +185,11 @@
     </message>
     <message>
         <source> The subject of the document.</source>
-        <translation>Předmět dokumentu.</translation>
+        <translation> Předmět dokumentu.</translation>
     </message>
     <message>
         <source> Keywords associated with the document.</source>
-        <translation>Klíčová slova spojená s dokumentem.</translation>
+        <translation> Klíčová slova spojená s dokumentem.</translation>
     </message>
     <message>
         <source>Keywords:</source>
@@ -203,25 +207,25 @@
         <source>A file named &quot;%1&quot; already exists.
 Are you sure you want to overwrite it?</source>
         <translation>Soubor s názvem &quot;%1&quot; již existuje.
-Jste si jistý, že jej chcete přepsat?</translation>
+Opravdu jej chcete přepsat?</translation>
     </message>
     <message>
         <source> The document&apos;s title.</source>
-        <translation>Název dokumentu.</translation>
+        <translation> Název dokumentu.</translation>
     </message>
 </context>
 <context>
     <name>InFile</name>
     <message>
         <source>I can&apos;t read file &quot;%1&quot; either because it&apos;s not a supported file type, or because the file has been damaged.</source>
-        <translation>Nelze přečíst soubor &quot;%1&quot;, protože buď tento není podporovaným souborovým typem, nebo protože soubor byl poškozen.</translation>
+        <translation>Soubor &quot;%1&quot; nelze přečíst. Buď jde o nepodporovaný formát, nebo je soubor poškozený.</translation>
     </message>
 </context>
 <context>
     <name>JobListView</name>
     <message>
         <source>%1 pages</source>
-        <translation>%1 stran</translation>
+        <translation>%1 stránek</translation>
     </message>
 </context>
 <context>
@@ -244,15 +248,15 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>1 up</source>
-        <translation>1 strana na list</translation>
+        <translation>1 stránka na list</translation>
     </message>
     <message>
         <source>2 up</source>
-        <translation>2 strany na list</translation>
+        <translation>2 stránky na list</translation>
     </message>
     <message>
         <source>Booklet</source>
-        <translation>Knížečka</translation>
+        <translation>Brožura</translation>
     </message>
     <message>
         <source>Print on both sides of a sheet.</source>
@@ -262,7 +266,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <message>
         <source>Double-sided</source>
         <comment>MainForm::Double-sided checkbox</comment>
-        <translation>Oboustranný</translation>
+        <translation>Oboustranně</translation>
     </message>
     <message>
         <source>Jobs</source>
@@ -278,7 +282,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Toolbar</source>
-        <translation>Nástrojový pruh</translation>
+        <translation>Panel nástrojů</translation>
     </message>
     <message>
         <source>&amp;Print</source>
@@ -306,51 +310,51 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Rotate left</source>
-        <translation type="unfinished"></translation>
+        <translation>Otočit doleva</translation>
     </message>
     <message>
         <source>Rotate the current page to the left</source>
-        <translation type="unfinished"></translation>
+        <translation>Otočit aktuální stránku doleva</translation>
     </message>
     <message>
         <source>Rotate right</source>
-        <translation type="unfinished"></translation>
+        <translation>Otočit doprava</translation>
     </message>
     <message>
         <source>Rotate the current page to the right</source>
-        <translation type="unfinished"></translation>
+        <translation>Otočit aktuální stránku doprava</translation>
     </message>
     <message>
         <source>Blank before</source>
-        <translation type="unfinished"></translation>
+        <translation>Prázdná před</translation>
     </message>
     <message>
         <source>Insert a blank page before the current page</source>
-        <translation type="unfinished"></translation>
+        <translation>Vložit prázdnou stránku před aktuální stránku</translation>
     </message>
     <message>
         <source>Blank after</source>
-        <translation type="unfinished"></translation>
+        <translation>Prázdná za</translation>
     </message>
     <message>
         <source>Insert a blank page after the current page</source>
-        <translation type="unfinished"></translation>
+        <translation>Vložit prázdnou stránku za aktuální stránku</translation>
     </message>
     <message>
         <source>Delete page</source>
-        <translation type="unfinished"></translation>
+        <translation>Smazat stránku</translation>
     </message>
     <message>
         <source>Delete the current page</source>
-        <translation type="unfinished"></translation>
+        <translation>Smazat aktuální stránku</translation>
     </message>
     <message>
         <source>Restore the most recently deleted page</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovit naposledy smazanou stránku</translation>
     </message>
     <message>
         <source>Add Boomaga as virtual printer</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat Boomagu jako virtuální tiskárnu</translation>
     </message>
     <message>
         <source>About Boomaga</source>
@@ -359,12 +363,12 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <message>
         <source>Check for Updates...</source>
         <extracomment>Menu action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Zkontrolovat aktualizace...</translation>
     </message>
     <message>
         <source>Check for Updates</source>
         <extracomment>menu action tooltip</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Zkontrolovat aktualizace</translation>
     </message>
     <message>
         <source>Boomaga</source>
@@ -377,15 +381,15 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Print the all pages on %1.</source>
-        <translation>Tisk všech stran na %1.</translation>
+        <translation>Tisk všech stránek na %1.</translation>
     </message>
     <message>
         <source>Print the odd pages on %1.&lt;p&gt;When finished, turn the pages, insert them into the printer&lt;br&gt;and click the Continue button.</source>
-        <translation>Tisk lichých stran na %1.&lt;p&gt;Až bude dokončeno, obraťte strany, vložte je do tiskárny&lt;br&gt;a klepněte na tlačítko Pokračovat.</translation>
+        <translation>Tisk lichých stránek na %1.&lt;p&gt;Až bude dokončeno, obraťte listy, vložte je do tiskárny&lt;br&gt;a klepněte na tlačítko Pokračovat.</translation>
     </message>
     <message>
         <source>Print the even pages on %1.</source>
-        <translation>Tisk sudých stran na %1.</translation>
+        <translation>Tisk sudých stránek na %1.</translation>
     </message>
     <message>
         <source>Continue</source>
@@ -394,12 +398,12 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <message>
         <source>%1 pages</source>
         <comment>Status bar</comment>
-        <translation>%1 stran</translation>
+        <translation>%1 stránek</translation>
     </message>
     <message>
         <source>%1 page</source>
         <comment>Status bar</comment>
-        <translation>%1 strana</translation>
+        <translation>%1 stránka</translation>
     </message>
     <message>
         <source>%1 sheets</source>
@@ -420,45 +424,49 @@ Jste si jistý, že jej chcete přepsat?</translation>
         <source>This will run the following command in a terminal. sudo will ask for your password if authentication is required.
 
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Toto spustí v terminálu následující příkaz. Pokud bude potřeba ověření, sudo si vyžádá vaše heslo.
+
+%1</translation>
     </message>
     <message>
         <source>Run command</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit příkaz</translation>
     </message>
     <message>
         <source>Boomaga virtual printer added successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Virtuální tiskárna Boomaga byla úspěšně přidána.</translation>
     </message>
     <message>
         <source>Could not add the Boomaga virtual printer. See the error above. Exit code:</source>
-        <translation type="unfinished"></translation>
+        <translation>Virtuální tiskárnu Boomaga se nepodařilo přidat. Chybu najdete výše. Návratový kód:</translation>
     </message>
     <message>
         <source>Press Enter to close this terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřete tento terminál stisknutím klávesy Enter.</translation>
     </message>
     <message>
         <source>Could not open a terminal for sudo authentication. Run this command in a terminal:
 
 %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodařilo se otevřít terminál pro ověření přes sudo. Spusťte tento příkaz v terminálu:
+
+%1</translation>
     </message>
     <message>
         <source>Insert blank page after this page</source>
-        <translation>Vložit prázdnou stranu po této straně</translation>
+        <translation>Vložit prázdnou stránku za tuto stránku</translation>
     </message>
     <message>
         <source>Delete this page</source>
-        <translation>Smazat tuto stranu</translation>
+        <translation>Smazat tuto stránku</translation>
     </message>
     <message>
         <source>Undo delete</source>
-        <translation>Zpět krok smazání</translation>
+        <translation>Vrátit smazání</translation>
     </message>
     <message>
         <source>Insert blank page before this page</source>
-        <translation>Vložit prázdnou stranu před tuto stranu</translation>
+        <translation>Vložit prázdnou stránku před tuto stránku</translation>
     </message>
     <message>
         <source>Save</source>
@@ -499,7 +507,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <message>
         <source>Page %1</source>
         <comment>&apos;Undo deletion&apos; menu item</comment>
-        <translation>Strana %1</translation>
+        <translation>Stránka %1</translation>
     </message>
     <message>
         <source>Boomaga files (*.boo);;All files (*.*)</source>
@@ -515,55 +523,55 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>4 up horizontal</source>
-        <translation>4 listy na stranu (formát na šířku)</translation>
+        <translation>4 stránky na list (vodorovně)</translation>
     </message>
     <message>
         <source>4 up vertical</source>
-        <translation>4 listy na stranu (formát na výšku)</translation>
+        <translation>4 stránky na list (svisle)</translation>
     </message>
     <message>
         <source>8 up horizontal</source>
-        <translation>8 listů na stranu (formát na šířku)</translation>
+        <translation>8 stránek na list (vodorovně)</translation>
     </message>
     <message>
         <source>8 up vertical</source>
-        <translation>8 listů na stranu (formát na výšku)</translation>
+        <translation>8 stránek na list (svisle)</translation>
     </message>
     <message>
         <source>Start new booklet from this page</source>
-        <translation>Začít novou knížečku od této strany</translation>
+        <translation>Začít novou brožuru od této stránky</translation>
     </message>
     <message>
         <source>Don&apos;t start new booklet from this page</source>
-        <translation>Nezačínat novou knížečku od této strany</translation>
+        <translation>Nezačínat novou brožuru od této stránky</translation>
     </message>
     <message>
         <source>Rotate page to the left</source>
-        <translation>Otočit stranu doleva</translation>
+        <translation>Otočit stránku doleva</translation>
     </message>
     <message>
         <source>Rotate page to the right</source>
-        <translation>Otočit stranu doprava</translation>
+        <translation>Otočit stránku doprava</translation>
     </message>
     <message>
         <source>Rename job</source>
-        <translation>Přejmenovat tiskovou úlohu</translation>
+        <translation>Přejmenovat úlohu</translation>
     </message>
     <message>
         <source>Rotate job to the left</source>
-        <translation>Otočit tiskovou úlohu doleva</translation>
+        <translation>Otočit úlohu doleva</translation>
     </message>
     <message>
         <source>Rotate job to the right</source>
-        <translation>Otočit tiskovou úlohu doprava</translation>
+        <translation>Otočit úlohu doprava</translation>
     </message>
     <message>
         <source>Job title:</source>
-        <translation>Název tiskové úlohy:</translation>
+        <translation>Název úlohy:</translation>
     </message>
     <message>
         <source>Export the project to PDF</source>
-        <translation>Vyvést projekt do PDF</translation>
+        <translation>Exportovat projekt do PDF</translation>
     </message>
     <message>
         <source>Ctrl+E</source>
@@ -583,11 +591,11 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Print with options...</source>
-        <translation>Tisknout s volbami...</translation>
+        <translation>Tisk s nastavením...</translation>
     </message>
     <message>
         <source>Select number of copies before printing.</source>
-        <translation>Vybrat před tiskem počet kopií.</translation>
+        <translation>Před tiskem zvolit počet kopií.</translation>
     </message>
     <message>
         <source>Ctrl+Shift+P</source>
@@ -595,16 +603,16 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Sub-booklets</source>
-        <translation>Dílčí knížečky</translation>
+        <translation>Dílčí brožury</translation>
     </message>
     <message>
         <source>Undo delete page</source>
-        <translation>Zpět smazání strany</translation>
+        <translation>Obnovit smazanou stránku</translation>
     </message>
     <message>
         <source>Page %1 of %2</source>
         <comment>Status bar</comment>
-        <translation>Strana %1 z %2</translation>
+        <translation>Stránka %1 z %2</translation>
     </message>
     <message>
         <source>Recent files</source>
@@ -612,7 +620,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>&amp;Edit page</source>
-        <translation>&amp;Upravit stranu</translation>
+        <translation>&amp;Upravit stránku</translation>
     </message>
     <message>
         <source>Edit &amp;job</source>
@@ -621,19 +629,19 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <message>
         <source>&amp;Preferences...</source>
         <extracomment>menu action text</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nastavení...</translation>
     </message>
     <message>
         <source>&amp;Export to PDF...</source>
-        <translation>&amp;Vyvést do PDF...</translation>
+        <translation>&amp;Exportovat do PDF...</translation>
     </message>
     <message>
         <source>Delete pages until the end of the job</source>
-        <translation>Odstranit strany až po konec úlohy</translation>
+        <translation>Odstranit stránky až po konec úlohy</translation>
     </message>
     <message>
         <source>Delete current job</source>
-        <translation>Smazat nynější úlohu</translation>
+        <translation>Smazat aktuální úlohu</translation>
     </message>
     <message>
         <source>Auto saving</source>
@@ -646,7 +654,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <message>
         <source>%1 %2: Page %3</source>
         <comment>&apos;Undo deletion&apos; menu item, (%1 - is a job number, %2 - is a job title, %3 - is a page number in this job</comment>
-        <translation>%1 %2: Strana %3</translation>
+        <translation>%1 %2: Stránka %3</translation>
     </message>
 </context>
 <context>
@@ -654,7 +662,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <message>
         <source>Converting PostScript to PDF</source>
         <comment>Progressbar text</comment>
-        <translation>Převést PostScript do PDF</translation>
+        <translation>Převádění PostScriptu do PDF</translation>
     </message>
     <message>
         <source>I can&apos;t start gs converter: &quot;%1&quot;</source>
@@ -666,7 +674,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <name>PrintDialog</name>
     <message>
         <source>Print document</source>
-        <translation>Vytisknout dokument</translation>
+        <translation>Tisk dokumentu</translation>
     </message>
     <message>
         <source>Number of copies:</source>
@@ -674,7 +682,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Collate copies:</source>
-        <translation>Srovnat kopie:</translation>
+        <translation>Kompletovat kopie:</translation>
     </message>
 </context>
 <context>
@@ -705,7 +713,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Draw border</source>
-        <translation>Kreslit okraj</translation>
+        <translation>Vykreslit rámeček</translation>
     </message>
     <message>
         <source>Print in reverse order</source>
@@ -713,15 +721,15 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Printer has duplexer</source>
-        <translation>Tiskárna je pravá-levá stránka</translation>
+        <translation>Tiskárna má duplexní jednotku</translation>
     </message>
     <message>
         <source>Manual with reverse (suitable for most printers)</source>
-        <translation>Ruční s obráceným (vhodné pro většinu tiskáren)</translation>
+        <translation>Ruční s otočením (vhodné pro většinu tiskáren)</translation>
     </message>
     <message>
         <source>Manual without reverse</source>
-        <translation>Ruční bez obráceného</translation>
+        <translation>Ruční bez otočení</translation>
     </message>
     <message>
         <source>Preferences of &quot;%1&quot;</source>
@@ -766,7 +774,7 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Nastavení</translation>
+        <translation>Nastavení tisku</translation>
     </message>
     <message>
         <source>Print on both sides</source>
@@ -774,11 +782,11 @@ Jste si jistý, že jej chcete přepsat?</translation>
     </message>
     <message>
         <source>Flip on short edge</source>
-        <translation>Převrátit na krátkém okraji</translation>
+        <translation>Otáčet po kratším okraji</translation>
     </message>
     <message>
         <source>Flip on long edge</source>
-        <translation>Převrátit na dlouhém okraji</translation>
+        <translation>Otáčet po delším okraji</translation>
     </message>
 </context>
 <context>
@@ -837,18 +845,18 @@ Jste si jistý, že jej chcete přepsat?</translation>
     <name>Settings</name>
     <message>
         <source>~/Untitled.pdf</source>
-        <translation>~/Nepojmenovaný.pdf</translation>
+        <translation>~/Bez názvu.pdf</translation>
     </message>
 </context>
 <context>
     <name>SubBookletView</name>
     <message>
         <source>Sub-booklet %1</source>
-        <translation>Dílčí knížečka %1</translation>
+        <translation>Dílčí brožura %1</translation>
     </message>
     <message>
         <source>%1 pages</source>
-        <translation>%1 stran</translation>
+        <translation>%1 stránek</translation>
     </message>
 </context>
 <context>
