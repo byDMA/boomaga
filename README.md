@@ -62,16 +62,19 @@ Address your preferences and error messages to our [Issue tracker](https://githu
 Translations
 ============
 
-Translations are managed on [Weblate](https://hosted.weblate.org/projects/boomaga/boomaga-gui-interface/).
+Translations are managed on [Weblate](https://hosted.weblate.org/engage/boomaga/).
 Join the project there to help translate Boomaga or improve an existing translation.
 
-After changing user-facing source strings, refresh the translation catalogs with:
+<a href="https://hosted.weblate.org/engage/boomaga/"><img src="https://hosted.weblate.org/widget/boomaga/horizontal-auto.svg" alt="Translation status"></a>
+
+
+If you are sending a PR, after changing user-facing source strings, refresh the translation catalogs with:
 
 ```sh
 scripts/update-translations.sh
 ```
 
-The same operation is available from a configured CMake build using the `update_translations` target.
+Please don't send updated translations in a PR. Use weblate instead.
 
 
 Why you may need it?
